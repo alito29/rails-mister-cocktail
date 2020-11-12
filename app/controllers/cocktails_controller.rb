@@ -1,5 +1,4 @@
-require 'open-uri'
-require 'json'
+
 
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show]
@@ -9,7 +8,6 @@ class CocktailsController < ApplicationController
   end
 
   def show
-    @doses = Dose.all
   end
 
   def new
