@@ -1,0 +1,21 @@
+
+<div class="banner">
+<h1>Welcome to Ali's Cocktails </h1>
+<%= link_to 'Add a new cocktail', new_cocktail_path, class: 'btn btn-primary' %>
+</div>
+
+<div class="container d-flex justify-content-between flex-wrap">
+<% @cocktails.each do |cocktail| %>
+<%=  %>
+<div class="card" style="width: 18rem;">
+
+  <img class="card-img-top" src="https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg" alt="Card image cap">
+  <div class="card-body">
+    <%= link_to cocktail.name, cocktail_path(cocktail) %> <br><br>
+  </div>
+</div>
+<% end %>
+</div>
+
+
+

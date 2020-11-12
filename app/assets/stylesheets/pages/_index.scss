@@ -1,2 +1,36 @@
 // Import page-specific CSS files here.
 @import "home";
+
+
+
+body {
+  background: url('background.jpg')
+}
+
+.banner { display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    align-items: center;
+    background-color: #92DCE5;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 53px;
+    a {
+     margin-right: 20px;
+     margin-top: 46px;
+    }
+
+    h1 {
+        margin: 0 auto;
+        font-family: sans-serif;
+        padding-left: 137px;
+        padding-top: 40px;
+    }
+
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+

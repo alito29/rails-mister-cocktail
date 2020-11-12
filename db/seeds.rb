@@ -5,15 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# Ingredient.create(name: "lemon")
-# Ingredient.create(name: "ice")
-# Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "orange")
 
-10.times do
-  new_cocktail = Cocktail.new(name: Faker::Name.name)
-  new_cocktail.save!
-  new_ingredient = Ingredient.new(name: Faker::Food.ingredient)
-  new_ingredient.save!
-  new_dose = Dose.new(description: Faker::Food.measurement, cocktail_id: new_cocktail.id, ingredient_id: new_ingredient.id)
-  new_dose.save!
-end
+
+Cocktail.create(name: 'Mojito')
+Cocktail.create(name: 'Long Island Iced Tea' )
+Cocktail.create(name: 'Daiquiri')
+Cocktail.create(name: 'Margarita')
+Cocktail.create(name: 'Bloody Mary')
+Cocktail.create(name: 'Cosmopolitan')
+Cocktail.create(name: 'Moscow Mule')
+
+Dose.create(description: '2cl', cocktail_id: 1, ingredient_id: 1)
+Dose.create(description: '5cl', cocktail_id: 2, ingredient_id: 1)
+Dose.create(description: '10cl', cocktail_id: 3, ingredient_id: 1)
+Dose.create(description: '8cl', cocktail_id: 4, ingredient_id: 1)
+Dose.create(description: '20cl', cocktail_id: 5, ingredient_id: 1)
+
+
