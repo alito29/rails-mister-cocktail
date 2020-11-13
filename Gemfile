@@ -23,8 +23,7 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 
 gem 'faker'
-gem 'json'
-gem 'open-uri'
+
 
 
 # Use Redis adapter to run Action Cable in production
