@@ -62,8 +62,6 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  heroku config:set CLOUDINARY_URL=cloudinary://695171714278267:QwelBsHnxdnlLD_DKCG17ab0kqg@db33e1maz
-
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
