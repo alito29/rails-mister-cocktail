@@ -7,8 +7,7 @@
 <div class="container d-flex justify-content-between flex-wrap">
 <% @cocktails.each do |cocktail| %>
 <div class="card" style="width: 18rem;">
-
-  <%= cl_image_tag("ft1u98qzfeuzaxpskrq0",
+  <%= cl_image_tag(cocktail.photo.key,
       width: 288, height: 300, crop: :fill) %>
   <div class="card-body">
     <%= link_to cocktail.name, cocktail_path(cocktail) %> <br><br>
