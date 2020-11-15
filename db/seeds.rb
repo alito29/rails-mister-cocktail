@@ -41,7 +41,7 @@ all_drinks.each do |drink|
   if url['drinks']
     puts url['drinks'][0]['strDrink'].class
     puts url['drinks'][0]['strDrinkThumb'].class
-    Cocktail.create(name: url['drinks'][0]['strDrink'], picture: url['drinks'][0]['strDrinkThumb'])
+    Cocktail.create(name: url['drinks'][0]['strDrink'], picture_url: url['drinks'][0]['strDrinkThumb'])
   end
 end
 
