@@ -8,7 +8,8 @@
 <% @cocktails.each do |cocktail| %>
 <div class="card" style="width: 18rem;">
 
-  <img class="card-img-top" src= <%= cocktail.picture_url %> alt="Card image cap">
+  <%= cl_image_tag("ft1u98qzfeuzaxpskrq0",
+      width: 288, height: 300, crop: :fill) %>
   <div class="card-body">
     <%= link_to cocktail.name, cocktail_path(cocktail) %> <br><br>
     <% cocktail.doses.each do |dose|  %>

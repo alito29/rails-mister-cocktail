@@ -2,6 +2,7 @@
 <%  %>
 
 <%= @cocktail.name %> <br><br>
+<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
 <h3>Ingredients</h3>
 <% @ing = Dose.where(cocktail_id: @cocktail.id)%>
 <% @ing.each do |dose| %>
